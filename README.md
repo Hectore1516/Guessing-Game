@@ -1,1 +1,3 @@
-# guessing-game
+- My guessing game
+- Date make was run: Tue Apr 26 12:13:48 CDT 2022
+- Lines of code in guessinggame:       19 guessinggame.sh

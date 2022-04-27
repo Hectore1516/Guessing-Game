@@ -1,11 +1,7 @@
-README.md:
-	touch README.md
-	echo "Project title: Guessing Game" >> README.md
-	echo "\nDate and time at which make was run:" >> README.md
-	date >> README.md
-	echo "\nNumber of lines of code contained in guessinggame.sh:" >> README.md
-	wc -l guessinggame.sh | egrep -o "[0-9]+" >> README.md
+fecha=$(shell date)
+lineNum=$(shell wc -l guessinggame.sh)
 
-
-clean:
-	rm README.md
+output: README.md
+	@echo "- My guessing game" > README.md
+	@echo "- Date make was run: $(fecha)" >> README.md
+	@echo "- Lines of code in guessinggame: $(lineNum)" >> README.md
